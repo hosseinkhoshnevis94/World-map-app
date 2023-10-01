@@ -21,7 +21,7 @@ function App() {
     setTimeout(() => setLoading(false), 1000);
   }, []);
   return (
-    <>
+    <div className="wrapper">
       {loading ? (
         <div className="spinner-container">
           <Spinner></Spinner>
@@ -29,7 +29,7 @@ function App() {
       ) : (
         <>
           <div className="container-fluid header">
-            <h1 className="header-title">Country data App</h1>
+            <h1 className="header-title">World map App</h1>
             <div className="cyan">
               click on each Country for more details...
             </div>
@@ -52,10 +52,10 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="footer">All Rights Reserved!</div>
+          <div className="footer">Developed By Hossein Khoshnevis</div>
         </>
       )}
-    </>
+    </div>
   );
 }
 

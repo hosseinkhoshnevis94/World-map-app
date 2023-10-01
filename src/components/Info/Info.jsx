@@ -2,7 +2,7 @@ import React from "react";
 export default function Info({ info, name }) {
   return (
     <>
-      {!info.flags && (
+      {info.flags && (
         <img src={info.flags.svg} alt={info.flags.alt} className="img-fluid" />
       )}
       <ul>
